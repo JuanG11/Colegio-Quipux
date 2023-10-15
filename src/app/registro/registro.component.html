@@ -1,0 +1,225 @@
+<!-- Start Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="assets/img/logo-quipux.png" class="rounded" alt="logo-quipux">
+    </a>
+    <div class="text-end" id="navbarSupportedContent">
+      <p class="username">Juan José García</p>
+      <a href="#"><i class="fi fi-ts-circle-user"></i></a>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+
+<!-- Aside -->
+<aside>
+  <ul>
+      <a href="#"><li>Estudiantes</li></a>
+      <a href="#"><li>Grupos</li></a>
+      <a href="#"><li>Materias</li></a>
+      <a href="#"><li>Evaluaciones</li></a>
+      <a href="#"><li>Informes</li></a>
+  </ul>
+</aside>
+<!-- End Aside -->
+
+<!-- Main Content -->
+<div class="container">
+  <p class="text2">Administración de materias&nbsp;</p>
+  <p class="text2">/ Materia</p>
+
+  <!-- Info Materia -->
+  <div class="card" style="max-width: 68rem; min-width: 15rem ;">
+      <div class="card-body">
+        <h6 class="card-title">Información de la materia</h6>
+
+        <!-- Dropdown Materia, Profesor, Grados -->
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Materia</label>
+          <select id="inputState" class="form-select">
+            <option selected>Seleccionar</option>
+            <option>Geografia</option>
+            <option>Historia</option>
+            <option>Filosofia</option>
+            <option>Español</option>
+            <option>Inglés</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Profesor</label>
+          <select id="inputState" class="form-select">
+            <option selected>Seleccionar</option>
+            <option>Fabio León Restrepo</option>
+            <option>Jaime Alberto Giraldo</option>
+            <option>Adriana María Zuluaga</option>
+            <option>Fabiola Ramírez</option>
+            <option>María Dolores Smicth</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Grado(s)</label>
+          <select id="inputState" class="form-select">
+            <option selected></option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+          </select>
+        </div>
+
+        <!-- End Dropdown -->
+        
+      </div>
+ </div>
+ <!-- End Info Materia -->
+
+ <!-- Info Estudiantes -->
+
+ <div class="card" style="max-width: 68rem; min-width: 15rem ;">
+  <div class="card-body">
+    <h6 class="card-title">Estudiantes</h6>
+
+    <!-- Search -->
+
+    <div class="col-md-4">
+      <label for="inputState" class="form-label">Estudiante</label>
+      <select id="inputState" class="form-select">
+        <option selected>Seleccionar</option>
+        <option>Camila Fernández Rojas</option>
+        <option>Juan Felipe Montoya Rios</option>
+        <option>Luisa Maria Cruz Hernández</option>
+        <option>Ana Maria Bedoya López</option>
+        <option>Santiago Sanchez Rivera</option>
+      </select>
+    </div>
+
+    <div class="col-md-4" style="width: 10rem;">
+      <label for="inputState" class="form-label">Código estudiante</label>
+      <select id="inputState" class="form-select">
+        <option selected>Seleccionar</option>
+        <option>2022101</option>
+        <option>2022102</option>
+        <option>2022103</option>
+        <option>2022104</option>
+        <option>2022105</option>
+      </select>
+    </div>
+
+    <input class="btn btn-primary" type="submit" value="Buscar">
+    <a href="#"><p class="text2" style="text-decoration: underline;">Limpiar filtros</p></a>
+
+    <!-- End Search -->
+    
+  </div>
+
+  <!-- Table Estudiante -->
+
+  <div class="row">
+      <div class="col">Código</div>
+      <div class="col">Estudiante</div>
+      <div class="col">Grado</div>
+      <div class="col">Grupo</div>
+      <div class="col">Estado</div>
+      <div class="col">Nota promedio</div>
+  </div>
+
+  <div class="row">
+      <div class="col">2022101</div>
+      <div class="col">Camila Fernández Rojas</div>
+      <div class="col">10</div>
+      <div class="col">A</div>
+      <div class="col">
+          <select id="inputState" class="form-select">
+              <option selected>En curso</option>
+              <option>...</option>
+            </select>
+      </div>
+      <div class="col">
+          <input type="text" class="form-control" id="inputPassword2">
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col">2022102</div>
+      <div class="col">Juan Felipe Montoya Rios</div>
+      <div class="col">9</div>
+      <div class="col">C</div>
+      <div class="col">
+          <select id="inputState" class="form-select">
+              <option selected>En curso</option>
+              <option>...</option>
+            </select>
+      </div>
+      <div class="col">
+          <input type="text" class="form-control" id="inputPassword2">
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col">2022103</div>
+      <div class="col">Luisa Maria Cruz Hernández</div>
+      <div class="col">9</div>
+      <div class="col">B</div>
+      <div class="col">
+          <select id="inputState" class="form-select">
+              <option selected>En curso</option>
+              <option>...</option>
+            </select>
+      </div>
+      <div class="col">
+          <input type="text" class="form-control" id="inputPassword2">
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col">2022104</div>
+      <div class="col">Ana Maria Bedoya López</div>
+      <div class="col">8</div>
+      <div class="col">B</div>
+      <div class="col">
+          <select id="inputState" class="form-select">
+              <option selected>En curso</option>
+              <option>...</option>
+            </select>
+      </div>
+      <div class="col">
+          <input type="text" class="form-control" id="inputPassword2">
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col">2022105</div>
+      <div class="col">Santiago Sanchez Rivera </div>
+      <div class="col">7</div>
+      <div class="col">A</div>
+      <div class="col">
+          <select id="inputState" class="form-select">
+              <option selected>En curso</option>
+              <option>...</option>
+            </select>
+      </div>
+      <div class="col">
+          <input type="text" class="form-control" id="inputPassword2">
+      </div>
+
+  </div>
+
+  <!-- End Table Estudiante -->
+
+ </div>
+
+ <!-- End Info Estudiantes -->
+
+ <div class="container text-end">
+   <a routerLink="/materias"><button type="button" class="btn btn-outline-primary" >Cancelar</button></a>
+   <a routerLink="/materias"><button type="button" class="btn btn-primary">Guardar</button></a>
+ </div>
+
+</div>
+<!-- End Main Content -->

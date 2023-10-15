@@ -1,0 +1,176 @@
+@import url('https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css');
+
+#navbarSupportedContent {
+    display: flex;
+    align-items: center; /* Centra verticalmente */
+}
+.navbar{
+    box-shadow: 4px 4px 4px rgba(74, 74, 74, 0.275);
+    position: fixed;
+    z-index: 2;
+    margin-bottom: 100px ;
+    width: 100%;
+}
+
+.navbar-brand{
+    font-size: 22px;
+}
+
+.rounded{
+    width: 120px;
+    height: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.username{
+    font-size: 16px;
+    padding: 10px 25px 0px 0px ;
+}
+
+.text{
+    font-size: 14px;
+    display: inline-block;
+    padding: 0px 25px 0px 0px ;
+}
+
+.text2{
+    font-size: 14px;
+    display: inline-block;
+}
+
+.text2:nth-child(1), .card-title{
+    color: #009CDE;
+}
+
+.fi-ts-circle-user{
+    color: black;
+    font-size: 30px;
+}
+
+aside{
+    width: 15%;
+    height: 120vh;
+    float: left;
+    background-color: #6A737C;
+    position: fixed;
+    margin-top: 65px ;
+}
+
+a{
+    text-decoration: none;
+}
+
+aside ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+aside ul li{
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    color: white;
+    padding: 14px 20px 20px 14px;
+    width: 100%;
+    transition: all ease 0.5s;
+}
+
+aside ul li:hover{
+    color: black;
+    background-color: #C8CCD0;
+}
+
+.container{
+    width: 85%;
+    height: 100px;
+    float: right;
+    padding: 20px 0px 0px 30px;
+    margin-top: 60px;
+}
+
+.container .text-end{
+    margin: 0px 15px 0px 0px;
+    height: 50px;
+    padding: 0px;
+}
+
+.card{
+    box-shadow: 3px 3px 1px  rgba(74, 74, 74, 0.135);
+    margin-bottom: 30px;
+}
+
+.card-title{
+    padding-bottom: 8px;
+}
+
+.col-md-4{
+    display: inline-block;
+    margin-right: 15px;
+    width:15rem ;
+}
+.col-md-4:nth-child(4){
+    width: 5rem;
+}
+
+.form-label{
+    font-size: 14px;
+}
+
+.form-select{
+    font-size: 12px;
+    color: gray;
+    border-color: rgb(153, 153, 153) ;
+    border-radius: 5px;
+}
+
+.btn-primary, .btn-outline-primary{
+    width:80px ;
+    height: 30px ;
+    font-size: 14px;
+    padding: 0px;
+    margin-right: 10px;
+}
+
+.btn-outline-primary{
+    width: 100px;
+}
+
+.row{
+    font-size: 14px;
+    margin: 0px 5px 0px 5px;
+    padding: 10px 0px 0px 10px;
+    display: flex;
+}
+
+.row:nth-child(2){
+    background-color: #016691;
+    color: white;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.row:nth-child(3), .row:nth-child(5), .row:nth-child(7)  {
+    background-color: rgba(221, 221, 221, 0.596);
+}
+
+.row:nth-child(7){
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    margin-bottom: 40px;
+}
+
+.col:nth-child(2){
+    flex: 2;
+}
+
+.col:nth-child(5){
+    margin-right: 40px;
+}
+
+.form-control{
+    border: 1px solid rgb(145, 145, 145);
+    width: 140px;
+}

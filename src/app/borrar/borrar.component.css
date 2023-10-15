@@ -1,0 +1,22 @@
+.modal{
+    margin-top: 200px;
+    vertical-align: middle;
+    color: black;
+}
+
+hr{
+    width: 85%;
+    margin: 0px 30px 0px 20px;
+}
+
+.modal-header{
+    border-bottom: 0px;
+}
+
+.modal-body{
+    text-align: left;
+}
+
+.modal-footer{
+    border: 0px;
+}

@@ -1,0 +1,251 @@
+<!-- Start Navbar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="assets/img/logo-quipux.png" class="rounded" alt="logo-quipux">
+    </a>
+    <div class="text-end" id="navbarSupportedContent">
+      <p class="username">Juan José García</p>
+      <a href="#"><i class="fi fi-ts-circle-user"></i></a>
+    </div>
+  </div>
+</nav>
+<!-- End Navbar -->
+
+<!-- Aside -->
+<aside>
+  <ul>
+      <a href="#"><li>Estudiantes</li></a>
+      <a href="#"><li>Grupos</li></a>
+      <a href="#"><li>Materias</li></a>
+      <a href="#"><li>Evaluaciones</li></a>
+      <a href="#"><li>Informes</li></a>
+  </ul>
+</aside>
+<!-- End Aside -->
+
+<!-- Main Content -->
+<div class="container">
+  
+  <div class="child1">
+  <p class="text2">Administración de materias&nbsp;</p>
+  </div>
+  
+  <div class="child2 text-end">
+  <a routerLink="/nuevoregistro"><button type="button" class="btn btn-outline-primary">
+    <i class="fi fi-rs-add"></i>
+    <p class="text icon">Nuevo registro</p>
+  </button></a>
+  </div> 
+
+  <!-- Search -->
+  <div class="card" style="max-width: 68rem; min-width: 15rem ;">
+      <div class="card-body">
+        
+        <!-- Dropdown Grado, Grupo, Materia, Profesor -->
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Grado</label>
+          <select id="inputState" class="form-select">
+            <option selected></option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Grupo</label>
+          <select id="inputState" class="form-select">
+            <option selected></option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Materia</label>
+          <select id="inputState" class="form-select">
+            <option selected>Seleccionar</option>
+            <option>Geografia</option>
+            <option>Historia</option>
+            <option>Filosofia</option>
+            <option>Español</option>
+            <option>Inglés</option>
+          </select>
+        </div>
+
+        <div class="col-md-4">
+          <label for="inputState" class="form-label">Profesor</label>
+          <select id="inputState" class="form-select">
+            <option selected>Seleccionar</option>
+            <option>Fabio León Restrepo</option>
+            <option>Jaime Alberto Giraldo</option>
+            <option>Adriana María Zuluaga</option>
+            <option>Fabiola Ramírez</option>
+            <option>María Dolores Smicth</option>
+          </select>
+        </div>
+
+        <!-- End Dropdown -->
+
+        <input class="btn btn-primary" type="submit" value="Buscar">
+        <a href="#" class="link"><p class="text2" style="text-decoration: underline;">Limpiar filtros</p></a>
+        
+      </div>
+ </div>
+ <!-- End Search -->
+
+ <!-- Info Materias -->
+
+ <div class="card" style="max-width: 68rem; min-width: 15rem ;">
+
+  <p class="text">Resultados</p>
+  
+  <!-- Table Materias -->
+
+  <div class="row">
+      <div class="col">Código</div>
+      <div class="col">Materia</div>
+      <div class="col">Profesor</div>
+      <div class="col">Grado</div>
+      <div class="col">Acciones</div>
+  </div>
+
+  <div class="row">
+      <div class="col">SOC001</div>
+      <div class="col">Geografia</div>
+      <div class="col">Fabio León Restrepo</div>
+      <div class="col">6, 7, 8, 9, 10, 11</div>
+      <div class="col">
+        <!-- Button to next page -->
+        <button type="button" class="btn btn-outline-secondary">
+          <a routerLink="/registro"><i class="fi fi-br-eye"></i></a>
+        </button>
+        <!-- End Button -->
+
+        <!-- Button to Modal -->
+          <a>
+          <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (mouseover)="openModal()">
+          <i class="fi fi-rs-trash"></i>
+          <div class="" *ngIf="modalSwitch == true">
+            <app-borrar></app-borrar>
+          </div>
+        </button>
+        </a>
+        <!-- End Button -->
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col">SOC002</div>
+      <div class="col">Historia</div>
+      <div class="col">Jaime Alberto Giraldo</div>
+      <div class="col">6, 7, 8</div>
+      <div class="col">
+        <!-- Button to next page -->
+        <button type="button" class="btn btn-outline-secondary">
+          <a routerLink="/nuevoregistro"><i class="fi fi-br-eye"></i></a>
+        </button>
+        <!-- End Button -->
+
+        <!-- Button to Modal -->
+          <a>
+          <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (mouseover)="openModal()">
+          <i class="fi fi-rs-trash"></i>
+          <div class="" *ngIf="modalSwitch == true">
+            <app-borrar></app-borrar>
+          </div>
+        </button>
+        </a>
+        <!-- End Button -->
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col">SOC003</div>
+      <div class="col">Filosofía</div>
+      <div class="col">Adriana María Zuluaga</div>
+      <div class="col">9, 10, 11</div>
+      <div class="col">
+        <!-- Button to next page -->
+        <button type="button" class="btn btn-outline-secondary">
+          <a routerLink="/nuevoregistro"><i class="fi fi-br-eye"></i></a>
+        </button>
+        <!-- End Button -->
+
+        <!-- Button to Modal -->
+          <a>
+          <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (mouseover)="openModal()">
+          <i class="fi fi-rs-trash"></i>
+          <div class="" *ngIf="modalSwitch == true">
+            <app-borrar></app-borrar>
+          </div>
+        </button>
+        </a>
+        <!-- End Button -->
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col">IDM001</div>
+      <div class="col">Español</div>
+      <div class="col">Fabiola Ramírez</div>
+      <div class="col">6, 7, 8, 9, 10, 11</div>
+      <div class="col">
+        <!-- Button to next page -->
+        <button type="button" class="btn btn-outline-secondary">
+          <a routerLink="/nuevoregistro"><i class="fi fi-br-eye"></i></a>
+        </button>
+        <!-- End Button -->
+
+        <!-- Button to Modal -->
+          <a>
+          <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (mouseover)="openModal()">
+          <i class="fi fi-rs-trash"></i>
+          <div class="" *ngIf="modalSwitch == true">
+            <app-borrar></app-borrar>
+          </div>
+        </button>
+        </a>
+        <!-- End Button -->
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col">IDM003</div>
+      <div class="col">Inglés</div>
+      <div class="col">María Dolores Smicth</div>
+      <div class="col">6, 7, 8, 9, 10, 11</div>
+      <div class="col">
+        <!-- Button to next page -->
+        <button type="button" class="btn btn-outline-secondary">
+          <a routerLink="/nuevoregistro"><i class="fi fi-br-eye"></i></a>
+        </button>
+        <!-- End Button -->
+
+        <!-- Button to Modal -->
+          <a>
+          <button type="button" class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#staticBackdrop" (mouseover)="openModal()">
+          <i class="fi fi-rs-trash"></i>
+          <div class="" *ngIf="modalSwitch == true">
+            <app-borrar></app-borrar>
+          </div>
+        </button>
+        </a>
+        <!-- End Button -->
+      </div>
+  </div>
+
+  <!-- End Table Materias -->
+
+ </div>
+
+ <!-- End Info Materias -->
+
+</div>
+<!-- End Main Content -->
